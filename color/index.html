@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Name to Hex Code Converter</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    #input-container {
+        margin-bottom: 10px;
+    }
+    #output-container {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div id="input-container">
+        <label for="colorInput">Enter color name(s) separated by commas:</label><br>
+        <input type="text" id="colorInput" placeholder="e.g., red, green, blue">
+        <button onclick="convertColors()">Convert</button>
+    </div>
+    <div id="output-container">
+        <p><strong>Hex Codes:</strong></p>
+        <div id="hexCodes"></div>
+    </div>
+    <div id="validHexCodes"></div>
+    <div id="invalidHexCodes"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
